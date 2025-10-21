@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aerodart.github.io/sitemap.xml
+Sitemap: https://aerodart.in/sitemap.xml
