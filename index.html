@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aerodart Techno Solutions - Aerospace Tooling, Structural Assembly, and Industry 4.0 Solutions" />
+  <title>Aerodart Techno Solutions</title>
+  <style>
+    :root {
+      --bg-dark: #0b0f16;
+      --bg-light: #1a202c;
+      --text-light: #f5f5f5;
+      --accent: #00a3d7;
+      --accent-hover: #008fbf;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    body {
+      background: var(--bg-dark);
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), 
+                  url('https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      text-align: center;
+      padding: 10rem 2rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ddd;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    section {
+      padding: 5rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--accent);
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+
+    .about, .offerings, .contact {
+      background: var(--bg-light);
+      border-radius: 10px;
+      padding: 3rem;
+      margin-bottom: 3rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .offerings-grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .card {
+      background: #111822;
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      border-radius: 6px;
+      border: none;
+      background: #0e1621;
+      color: var(--text-light);
+    }
+
+    button {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 0.75rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: var(--accent-hover);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Aerodart Techno Solutions</h1>
+    <p>Precision Aerospace Tooling • Structural Assembly • Industry 4.0 Integration</p>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>About Us</h2>
+      <p>
+        Aerodart Techno Solutions (ATS) is an established supplier and solutions provider in Aerospace, Aviation, and Defence sectors. 
+        We offer a wide range of Aerospace-grade tools, torque systems, and structural assembly equipment — combining mechanical engineering expertise with modern Industry 4.0 practices.
+      </p>
+      <p style="margin-top:1rem;">
+        Our capabilities extend to providing certified maintenance, repair, and overhaul (MRO) solutions through DGCA-approved partners.
+      </p>
+    </section>
+
+    <section class="offerings">
+      <h2>Our Offerings</h2>
+      <div class="offerings-grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&w=800&q=80" alt="Aircraft Tools">
+          <h3>Aircraft Tooling Solutions</h3>
+          <p>Complete range of structural assembly tools, torque tools, and aviation maintenance kits under one roof.</p>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1516239321547-76a0b61a82eb?auto=format&fit=crop&w=800&q=80" alt="Precision Tools">
+          <h3>Precision & Torque Tools</h3>
+          <p>Power-operated torque systems and specialized RAD Torque equipment for accurate, repeatable assembly processes.</p>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1533436041298-278fbf4b5943?auto=format&fit=crop&w=800&q=80" alt="GSE Tools">
+          <h3>Ground Support Equipment</h3>
+          <p>Used and reconditioned GSE solutions — providing cost-effective options for aircraft handling and maintenance operations.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <form action="https://formspree.io/f/manpzalb" method="POST">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="_replyto" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <p style="margin-top:2rem; text-align:center;">
+        or email us directly at <a href="mailto:sales@aerodart.in">sales@aerodart.in</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Aerodart Techno Solutions — All Rights Reserved
+  </footer>
+
+</body>
+</html>
